@@ -12,10 +12,10 @@ namespace ProjectSurvivor
             
         }
         private void Update()
-        {            
-            var player = FindObjectOfType<Player>();
-            var dir = (player.transform.position - transform.position).normalized;
+        {                        
+            var dir = (Player.Instance.transform.position - transform.position).normalized;
             transform.Translate(dir*Time.deltaTime*MovementSpeed);
         }
+   
     }
 }
