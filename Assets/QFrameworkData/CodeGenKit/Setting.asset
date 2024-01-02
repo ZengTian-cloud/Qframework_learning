@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Setting
   m_EditorClassIdentifier: 
   Namespace: ProjectSurvivor
-  ScriptDir: Assets/Scripts
+  ScriptDir: Assets/Scripts/Game/Abilities
   PrefabDir: Assets/Resources/Prefabs

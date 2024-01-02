@@ -1,21 +1,18 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 using QFramework;
-using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
 
 namespace ProjectSurvivor
 {
-	public class UIGameOverPanelData : UIPanelData
+	public class UIGamePassPanelData : UIPanelData
 	{
 	}
-	public partial class UIGameOverPanel : UIPanel
+	public partial class UIGamePassPanel : UIPanel
 	{
-
 		protected override void OnInit(IUIData uiData = null)
 		{
-			mData = uiData as UIGameOverPanelData ?? new UIGameOverPanelData();
+			mData = uiData as UIGamePassPanelData ?? new UIGamePassPanelData();
 			// please add init code here
 		}
 		

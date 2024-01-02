@@ -19,19 +19,15 @@ MonoBehaviour:
     From: 0
     NameToFullName: []
     BindInfos:
-    - TypeName: UnityEngine.SpriteRenderer
-      PathToRoot: Sprite
-      MemberName: Sprite
-    - TypeName: CircleCollider2D
-      PathToRoot: HurtBox
-      MemberName: HurtBox
-    ScriptsFolder: Assets/Scripts
-    ClassName: Player
+    - TypeName: ProjectSurvivor.Enemy
+      PathToRoot: Enemy
+      MemberName: Enemy
+    ScriptsFolder: Assets/Scripts/Game/Abilities
+    ClassName: EnemyGenerator
     Namespace: ProjectSurvivor
     MainCode: "using UnityEngine;\r\nusing QFramework;\r\n\r\nnamespace ProjectSurvivor\r\n{\r\n\tpublic
-      partial class Player : ViewController\r\n\t{\r\n\t\tvoid Start()\r\n\t\t{\r\n\t\t\t//
+      partial class EnemyGenerator : ViewController\r\n\t{\r\n\t\tvoid Start()\r\n\t\t{\r\n\t\t\t//
       Code Here\r\n\t\t}\r\n\t}\r\n}\r\n"
-    DesignerCode: "// Generate Id:5d64871a-9003-4d53-bf37-c3ddb4c1f0b0\r\nusing UnityEngine;\r\n\r\nnamespace
-      ProjectSurvivor\r\n{\r\n\tpublic partial class Player\r\n\t{\r\n\r\n\t\tpublic
-      UnityEngine.SpriteRenderer Sprite;\r\n\r\n\t\tpublic CircleCollider2D HurtBox;\r\n\r\n\t\tpublic
-      UnityEngine.Rigidbody2D rb;\r\n\r\n\t}\r\n}\r\n"
+    DesignerCode: "// Generate Id:15207286-07a0-42ed-ac50-bf31178219ed\r\nusing UnityEngine;\r\n\r\nnamespace
+      ProjectSurvivor\r\n{\r\n\tpublic partial class EnemyGenerator\r\n\t{\r\n\r\n\t\tpublic
+      ProjectSurvivor.Enemy Enemy;\r\n\r\n\t}\r\n}\r\n"

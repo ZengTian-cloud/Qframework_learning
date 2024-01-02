@@ -5,13 +5,13 @@ using QFramework;
 
 namespace ProjectSurvivor
 {
-	// Generate Id:b1c0eedc-bba2-4eb5-9ae6-2f10ab1dc4c8
-	public partial class UIGameOverPanel
+	// Generate Id:622b51f7-6a2c-4212-b35b-1d5c2a01ae43
+	public partial class UIGamePassPanel
 	{
-		public const string Name = "UIGameOverPanel";
+		public const string Name = "UIGamePassPanel";
 		
 		
-		private UIGameOverPanelData mPrivateData = null;
+		private UIGamePassPanelData mPrivateData = null;
 		
 		protected override void ClearUIComponents()
 		{
@@ -19,7 +19,7 @@ namespace ProjectSurvivor
 			mData = null;
 		}
 		
-		public UIGameOverPanelData Data
+		public UIGamePassPanelData Data
 		{
 			get
 			{
@@ -27,11 +27,11 @@ namespace ProjectSurvivor
 			}
 		}
 		
-		UIGameOverPanelData mData
+		UIGamePassPanelData mData
 		{
 			get
 			{
-				return mPrivateData ?? (mPrivateData = new UIGameOverPanelData());
+				return mPrivateData ?? (mPrivateData = new UIGamePassPanelData());
 			}
 			set
 			{
