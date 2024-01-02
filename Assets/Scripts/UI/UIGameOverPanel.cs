@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using QFramework;
 
 namespace ProjectSurvivor
@@ -13,6 +14,13 @@ namespace ProjectSurvivor
 		{
 			mData = uiData as UIGameOverPanelData ?? new UIGameOverPanelData();
 			// please add init code here
+			ActionKit.OnUpdate.Register(() => {
+				if (Input.GetKeyDown(KeyCode.Space))
+				{
+					this.CloseSelf();
+					SceneManager.LoadScene("SampleScene");
+				}
+			}).UnRegisterWhenGameObjectDestroyed(gameObject);
 		}
 		
 		protected override void OnOpen(IUIData uiData = null)

@@ -20,9 +20,7 @@ namespace ProjectSurvivor
 		{
 			
 			HurtBox.OnTriggerEnter2DEvent(collider2D=> {
-
-				this.DestroyGameObjGracefully();
-				ResKit.Init();
+				this.DestroyGameObjGracefully();				
 				UIKit.OpenPanel<UIGameOverPanel>();
 			}).UnRegisterWhenGameObjectDestroyed(gameObject);
 			
